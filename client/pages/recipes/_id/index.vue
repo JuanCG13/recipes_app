@@ -11,6 +11,11 @@
           :src="recipe.picture"
           alt
         >
+        <div class="my-3">
+          <nuxt-link class="btn btn-outline btn-large btn-info" to="/recipes/">
+            Atras <span class="ml-2"></span>
+          </nuxt-link>
+        </div>
       </div>
       <div class="col-md-6">
         <div class="recipe-details">

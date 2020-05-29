@@ -4,7 +4,7 @@
       <h1>La Recipes 😋</h1>
       <p class="mt-3">Recipes for the meals we love ❤️ ️</p>
       <nuxt-link class="btn btn-outline btn-large btn-info" to="/recipes">
-        View Recipes <span class="ml-2">&rarr;</span>
+        Ver Recetas<span class="ml-2">&rarr;</span>
       </nuxt-link>
     </div>
   </header>

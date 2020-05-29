@@ -11,7 +11,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/axios": "^5.10.3",
     "bootstrap": "^4.1.3",
     "bootstrap-vue": "^2.0.0-rc.11",
     "cross-env": "^5.2.0",
@@ -19,5 +19,7 @@
   },
   "devDependencies": {
     "nodemon": "^1.18.9"
-  }
+  },
+  "main": "nuxt.config.js",
+  "license": "ISC"
 }
