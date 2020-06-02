@@ -86,26 +86,26 @@ WSGI_APPLICATION = 'api.wsgi.application'
  # sacamos el SO, heroku tiene en su descripcion aws,
 # eso nos sirve para comprobar que esta corriendo en la nube
 
-    import dj_database_url  
-    import dotenv
-    DATABASES = {}
-    DATABASES['default'] = dj_database_url.config()
-    #static files
-    STATICFILES_DIRS = []
-    # (
-    #       os.path.join(BASE_DIR, 'static'),
-    #  )
+# import dj_database_url  
+# import dotenv
+# DATABASES = {}
+# DATABASES['default'] = dj_database_url.config()
+#     #static files
+# STATICFILES_DIRS = []
+#     # (
+#     #       os.path.join(BASE_DIR, 'static'),
+#     #  )
 
-    STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 
     # this is for local deploy
-    # DATABASES = {
-    #     'default': {
-    #         'ENGINE': 'django.db.backends.sqlite3',
-    #         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    #     }
-    # }
+DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+}
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
 

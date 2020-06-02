@@ -23,43 +23,48 @@
       <div class="col-md-4">
         <form @submit.prevent="submitRecipe">
           <div class="form-group">
-            <label for>Recipe Name</label>
+            <label for>Nombre de la Receta</label>
             <input type="text" class="form-control" v-model="recipe.name">
           </div>
           <div class="form-group">
-            <label for>Ingredients</label>
+            <label for>Ingredientes</label>
             <input v-model="recipe.ingredients" type="text" class="form-control">
           </div>
           <div class="form-group">
-            <label for>Food picture</label>
+            <label for>Imagen</label>
             <input type="file" name="file" @change="onFileChange">
           </div>
           <div class="row">
             <div class="col-md-6">
               <div class="form-group">
-                <label for>Difficulty</label>
+                <label for>Difficultad</label>
                 <select v-model="recipe.difficulty" class="form-control">
-                  <option value="Easy">Easy</option>
-                  <option value="Medium">Medium</option>
-                  <option value="Hard">Hard</option>
+                  <option value="Easy">Facil</option>
+                  <option value="Medium">Medio</option>
+                  <option value="Hard">Dificil</option>
                 </select>
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-group">
                 <label for>
-                  Prep time
-                  <small>(minutes)</small>
+                  <span>Tiempo Elaboracion</span>
                 </label>
                 <input v-model="recipe.prep_time" type="number" class="form-control">
+                  <small>(minutos)</small>
               </div>
             </div>
           </div>
           <div class="form-group mb-3">
-            <label for>Preparation guide</label>
+            <label for>Guia de preparacion</label>
             <textarea v-model="recipe.prep_guide" class="form-control" rows="8"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary">Guardar</button>
+          
+          <nuxt-link class="btn btn-outline btn-large btn-danger" to="/recipes/" style="color: white;">
+            <span>Cancelar</span>
+          </nuxt-link>
+        
         </form>
       </div>
     </div>

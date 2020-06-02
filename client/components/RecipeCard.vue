@@ -5,12 +5,12 @@
     <div class="card-body">
       <h5 class="card-title">{{ recipe.name }}</h5>
       <p class="card-text">
-        <strong>Ingredients:</strong> {{ recipe.ingredients }}
+        <strong>Ingredientes:</strong> {{ recipe.ingredients }}
       </p>
       <div class="action-buttons">
-        <nuxt-link :to="`/recipes/${recipe.id}/`" class="btn btn-sm btn-success"> View </nuxt-link>
-        <nuxt-link :to="`/recipes/${recipe.id}/edit/`" class="btn btn-sm btn-primary"> Edit </nuxt-link>
-        <button @click="onDelete(recipe.id)"  class="btn btn-sm btn-danger">Delete</button>
+        <nuxt-link :to="`/recipes/${recipe.id}/`" class="btn btn-sm btn-success"> Ver </nuxt-link>
+        <nuxt-link :to="`/recipes/${recipe.id}/edit/`" class="btn btn-sm btn-primary"> Editar </nuxt-link>
+        <button @click="onDelete(recipe.id)"  class="btn btn-sm btn-danger"> Eliminar </button>
       </div>
     </div>
   </div>

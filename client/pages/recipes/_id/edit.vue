@@ -63,6 +63,11 @@
             <textarea v-model="recipe.prep_guide" class="form-control" rows="8"></textarea>
           </div>
           <button type="submit" class="btn btn-success">Save</button>
+          
+          <nuxt-link class="btn btn-outline btn-large btn-info" to="/recipes/">
+            <span>Atras </span>
+          </nuxt-link>
+        
         </form>
       </div>
     </div>

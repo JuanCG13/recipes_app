@@ -1,6 +1,9 @@
 <template>
   <main class="container my-5">
     <div class="row">
+          <nuxt-link class="btn btn-outline btn-large btn-info" to="/recipes/" style="padding: 5px 50px">
+            <span>Atras </span>
+          </nuxt-link>
       <div class="col-12 text-center my-3">
         <h2 class="mb-3 display-4 text-uppercase">{{ recipe.name }}</h2>
       </div>
@@ -11,11 +14,6 @@
           :src="recipe.picture"
           alt
         >
-        <div class="my-3">
-          <nuxt-link class="btn btn-outline btn-large btn-info" to="/recipes/">
-            Atras <span class="ml-2"></span>
-          </nuxt-link>
-        </div>
       </div>
       <div class="col-md-6">
         <div class="recipe-details">
