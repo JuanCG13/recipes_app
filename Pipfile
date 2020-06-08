@@ -9,6 +9,13 @@ verify_ssl = true
 django = "*"
 django-rest-framework = "*"
 django-cors-headers = "*"
+python-decouple = "*"
+whitenoise = "*"
+dj-database-url = "*"
+pillow = "*"
+gunicorn = "*"
+python-dotenv = "*"
+psycopg2 = "*"
 
 [requires]
 python_version = "3.6"
